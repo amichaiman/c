@@ -55,5 +55,5 @@ int main()
 void flush_buffer()
 {
     char c;
-    while (c = getchar() != '\n');
+    while (c = getchar() != '\n' || c != EOF);
 }
