@@ -7,7 +7,7 @@
  * is also the smallest of its columb
  * 
  * input: matrix to be checked, empty 
- * matrix to filles with spots in 
+ * matrix to be filled with spots in 
  * array that meet the guidelines
  * 
  * output: number of spots that meet 
@@ -64,17 +64,14 @@ int biggest_in_row(int a[])
 }
 
 /************************************************
- * function returns a value of 1 if given 
- * numbers is smallest in columb, 0 otherwise
+ * function returns1 if given number is 
+ * smallest in columb, 0 otherwise
  * 
  * input: 2d array, columb to be checked, number
  * that should be smallest
  * 
  * output: 1 if number is smallest, 0 otherwise
  ************************************************/
-
-
-
 int is_smallest_in_col(int a[][SIZE], int col, int num)
 {
     int i;
