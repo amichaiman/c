@@ -21,16 +21,16 @@ int find_max_row_min_col(int matin[][SIZE], int matout[][SIZE])
     
     for(i=0; i<SIZE; i++)
     {
-        row_biggest = biggest_in_row(matin[i]);
-        if (is_smallest_in_col(matin,row_biggest,matin[i][row_biggest]))
+        row_biggest = biggest_in_row(matin[i]);                             //find biggest in row
+        if (is_smallest_in_col(matin,row_biggest,matin[i][row_biggest]))    //check if its the smallest in it's columb
         {
-            row_biggest[0][number_in_matouts] = i;
-            row_biggest[1][number_in_matouts] = row_biggest;
-            numbers_in_matout++;
+            row_biggest[0][numbers_in_matouts] = i;                  //add row index to matout
+            row_biggest[1][numbers_in_matouts] = row_biggest;        //add col index to matout
+            numbers_in_matout++;                                       
         }
     }
     
-    return number_in_matout; 
+    return numbers_in_matout; 
 }
 
 
